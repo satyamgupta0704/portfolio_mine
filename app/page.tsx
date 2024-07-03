@@ -191,7 +191,7 @@ export default function Home() {
                   <SiGithub className="h-6 w-6 inline text-green-500" />{" "}
                   <span className="text-green-500 underline">GitHub</span>
                 </LinkPreview>{" "}
-                <LinkPreview url="https://github.com/satyamgupta0704" className="font-bold">
+                <LinkPreview url="https://leetcode.com/guptasatyam0704/" className="font-bold">
                   <SiLeetcode className="h-6 w-6 inline text-yellow-500" />{" "}
                   <span className="text-yellow-500 underline">LeetCode</span>
                 </LinkPreview>{" "}
