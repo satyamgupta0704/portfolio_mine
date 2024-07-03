@@ -25,7 +25,7 @@ const projects = [
     title: "Kharcha Management",
     description: "MERN based Expense Tracker WebApp",
     date: "2023",
-    image: "/images/kharcha.ico",
+    image: "/images/rupee.png",
   },
   {
     title: "PDF : Convo",
