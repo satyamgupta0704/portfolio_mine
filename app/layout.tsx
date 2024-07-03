@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 const font = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "👨‍💻 Igor | Fullstack Developer",
+  title: "👨‍💻 Satyam Gupta | Aspiring Software Developer",
   description: "Just a developer who loves to code and learn new things.",
 };
 
