@@ -26,24 +26,28 @@ const projects = [
     description: "MERN based Expense Tracker WebApp",
     date: "2023",
     image: "/images/rupee.png",
+    demoLink: "https://github.com/satyamgupta0704/Expense-Tracker.git",
   },
   {
     title: "PDF : Convo",
     description: "A PDF Conversation Application Using Streamlit and Langchain",
     date: "2024",
     image: "/images/langpdf.avif",
+    demoLink: "https://github.com/satyamgupta0704/pdf-convo-langchain.git",
   },
   {
-    title: "RoBo",
-    description: "MERN based Robotics Education Platform",
+    title: "Nike Landing Page",
+    description: "Landing Page of Nike using React+Tailwind",
     date: "2024",
-    image: "/images/robos.png",
+    image: "/images/favicon.ico",
+    demoLink: "https://nike-frontend-tailwind.vercel.app/",
   },
   {
     title: "Portfolio",
     description: "Personal Portfolio using Next.Js",
     date: "2024",
     image: "/images/next.jpeg",
+    demoLink: "https://portfolio-mine-one.vercel.app/",
   },
 ];
 
@@ -198,56 +202,68 @@ export default function Home() {
               </p>
 
               <p className="text-muted-foreground text-lg">
-                Feel free to reach out to me on{" "}
-                <LinkPreview
-                  url="https://www.linkedin.com/in/satyam-gupta-1a4b64228/"
-                  className="font-bold"
-                >
-                  <PiLinkedinLogoFill className="h-6 w-6 inline text-sky-700" />{" "}
-                  <span className="text-sky-700 underline">LinkedIn</span>
-                </LinkPreview>{" "}
-              </p>
+  Feel free to reach out to me on{" "}
+  <LinkPreview
+    url="https://www.linkedin.com/in/satyam-gupta-1a4b64228/"
+    className="font-bold"
+  >
+    <PiLinkedinLogoFill className="h-6 w-6 inline text-sky-700" />{" "}
+    <span className="text-sky-700 underline">LinkedIn</span>
+  </LinkPreview>{" "}
+  or check out my{" "}
+  <LinkPreview
+    url="https://drive.google.com/file/d/1RiwiML9I7xxizP6gTFZS3KvtjzUv0zXO/view?usp=drive_link"  // Replace with your resume URL
+    className="font-bold"
+  >
+    <span className="text-white underline">Resume</span>
+  </LinkPreview>
+</p>
+
             </div>
           </div>
 
-          <Element
-          name="projects"
-          
-          >
-            <h2 className="text-xl pt-10 font-semibold text-white">Projects</h2>
-            <div className="grid grid-cols-2 gap-4 mt-5">
-              {projects.map((project) => (
-                <div
-                  key={project.title}
-                  className="border rounded-xl p-4 bg-white"
-                >
-                  <div className="md:flex items-center justify-between">
-                    <div className="md:flex items-center gap-x-4">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={100}
-                        height={100}
-                        className="rounded-md w-16 h-16"
-                      />
+          <Element name="projects">
+  <h2 className="text-xl pt-10 font-semibold text-white">Projects</h2>
+  <div className="grid grid-cols-2 gap-4 mt-5">
+    {projects.map((project) => (
+      <div key={project.title} className="border rounded-xl p-4 bg-white">
+        <div className="md:flex items-center justify-between">
+          <div className="md:flex items-center gap-x-4">
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={100}
+              height={100}
+              className="rounded-md w-16 h-16"
+            />
 
-                      <div className="flex flex-col ">
-                        <h2 className="text-md font-semibold ">
-                          {project.title}
-                        </h2>
-                        <p className="text-muted-foreground text-sm">
-                          {project.description}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground text-sm mt-2 md:mt-0">
-                      {project.date}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="flex flex-col">
+              <h2 className="text-md font-semibold">
+                {project.title}{" "}
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline hover:underline"
+                >
+                  Demo
+                </a>
+              </h2>
+              <p className="text-muted-foreground text-sm">
+                {project.description}
+              </p>
             </div>
-          </Element>
+          </div>
+          <p className="text-muted-foreground text-sm mt-2 md:mt-0">
+            {project.date}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</Element>
+
+
 
           <Element name="skills">
             <h2 className="text-xl pt-10 font-semibold text-white">Skills</h2>
