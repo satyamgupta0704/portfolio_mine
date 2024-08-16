@@ -160,7 +160,7 @@ export default function Home() {
         <div className="md:w-3/5 mx-auto px-6 md:px-0 pb-20">
           <div className="md:flex md:gap-x-10 items-center md:pt-28">
             <Image
-              src={"/images/mine4.jpeg"}
+              src={"/images/mine6.jpeg"}
               alt="Satyam"
               width={10000}
               height={10000}
