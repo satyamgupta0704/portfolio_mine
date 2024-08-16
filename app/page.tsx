@@ -40,7 +40,7 @@ const projects = [
     description: "Landing Page of Nike using React+Tailwind",
     date: "2024",
     image: "/images/favicon.ico",
-    demoLink: "https://nike-frontend-tailwind.vercel.app/",
+    demoLink: "https://nike-qloi.vercel.app/",
   },
   {
     title: "Portfolio",
@@ -185,7 +185,9 @@ export default function Home() {
               <p className="text-muted-foreground text-lg md:pr-8 text-white">
                 Passionate Computer Science student showcasing expertise in Data Structures and
                 Algorithms, along with proficiency in C/C++, Python, JavaScript, and Full-stack
-                development with MERN. <br />
+                development with MERN.
+                <br />
+                <br />
                 Eager to apply analytical and technical skills in delivering impactful solutions as
                 a Software Engineer.
               </p>
@@ -198,7 +200,7 @@ export default function Home() {
                 <LinkPreview url="https://leetcode.com/guptasatyam0704/" className="font-bold">
                   <SiLeetcode className="h-6 w-6 inline text-yellow-500" />{" "}
                   <span className="text-yellow-500 underline">LeetCode</span>
-                </LinkPreview>{" "}
+                </LinkPreview>{" "} <span>(Top 19.66%)</span>
               </p>
 
               <p className="text-muted-foreground text-lg">
@@ -212,7 +214,7 @@ export default function Home() {
   </LinkPreview>{" "}
   or check out my{" "}
   <LinkPreview
-    url="https://drive.google.com/file/d/1RiwiML9I7xxizP6gTFZS3KvtjzUv0zXO/view?usp=drive_link"  // Replace with your resume URL
+    url="https://drive.google.com/file/d/1ShmUQygJBs4N2MHA6F6xQJ4Y8J5btni5/view?usp=sharing"  // Replace with your resume URL
     className="font-bold"
   >
     <span className="text-white underline">Resume</span>
