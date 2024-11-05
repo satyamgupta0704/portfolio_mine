@@ -214,7 +214,7 @@ export default function Home() {
   </LinkPreview>{" "}
   or check out my{" "}
   <LinkPreview
-    url="https://drive.google.com/file/d/1ShmUQygJBs4N2MHA6F6xQJ4Y8J5btni5/view?usp=sharing"  // Replace with your resume URL
+    url="https://drive.google.com/file/d/1lTNYWiSWZRw3zGR2OHW0h9sNhUY2JiNN/view?usp=sharing"  // Replace with your resume URL
     className="font-bold"
   >
     <span className="text-white underline">Resume</span>
