@@ -20,7 +20,6 @@ import {
   SiFastapi,
   SiDocker,
   SiDatabricks,
-  SiLangchain,
   SiSupabase,
   SiGit,
 } from "react-icons/si";
@@ -114,7 +113,7 @@ const skills = [
   { title: "Next.js", icon: <RiNextjsLine className="h-10 w-10 text-white" /> },
   { title: "Node.js", icon: <SiNodedotjs className="h-10 w-10 text-green-500" /> },
   { title: "FastAPI", icon: <SiFastapi className="h-10 w-10 text-teal-400" /> },
-  { title: "LangChain", icon: <SiLangchain className="h-10 w-10 text-violet-400" /> },
+  { title: "LangChain", icon: <Bot className="h-10 w-10 text-violet-400" /> },
   { title: "LangGraph", icon: <Bot className="h-10 w-10 text-emerald-400" /> },
   { title: "Azure AI Search", icon: <Cloud className="h-10 w-10 text-sky-500" /> },
   { title: "Databricks", icon: <SiDatabricks className="h-10 w-10 text-blue-600" /> },
@@ -388,4 +387,3 @@ export default function Home() {
     </div>
   );
 }
-
